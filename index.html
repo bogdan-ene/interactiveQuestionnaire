@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Questionnaire</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Questionnaire</h1>
+            <form id="userForm">
+                <label for="user">Enter your name:</label>
+                <input type="text" id="user" placeholder="Enter your name"/>
+
+                <label for="userTown">Town:</label>
+                <input type="text" id="userTown" placeholder="Enter your town"/>
+
+                <label>Do you like cats?</label>
+                <label for="yesLikeCats">
+                    <input type="radio" id="yesLikeCats" name="likeCats" value="Yes"> Yes
+                </label>
+                <label for="noLikeCats">
+                    <input type="radio" id="noLikeCats" name="likeCats" value="No"> No
+                </label>
+
+                <label for="textInput">Describe yourself in a few lines:</label>
+                <textarea id="textInput" rows="4" placeholder="Enter a short description"></textarea>
+
+                <label for="selectPreference">What types of movies do you like?</label>
+                <select id="selectPreference">
+                    <option value="action">action</option>
+                    <option value="comedy">comedy</option>
+                    <option value="romantic">romantic</option>
+                </select>
+
+                <label for="checkPreferences">What's your favorite sport?</label>
+                <label for="checkOption1">
+                    <input type="checkbox" id="checkOption1" name="preferences" value="football"> Football
+                </label>
+                <label for="checkOption2">
+                    <input type="checkbox" id="checkOption2" name="preferences" value="volleyball"> Volleyball
+                </label>
+                <label for="checkOption3">
+                    <input type="checkbox" id="checkOption3" name="preferences" value="tennis"> Tennis
+                </label>
+
+                <button id="submitForm">Submit</button>
+            </form>
+            <p id="greeting"></p>
+
+            <div class="cat-image-container" id="catImageContainer">
+                <img src="cute-cat.webp" alt="Cute Cat">
+            </div>
+
+            <div class="birthdate-container">
+                <label for="birthdateInput">Enter your birthdate:</label>
+                <input type="date" id="birthdateInput">
+                <button id="calculateAge">Calculate Age</button>
+                <p id="ageResult"></p>
+            </div>
+
+            <div class="clock" id="clock">12:00:00</div>
+        </div>
+    </div>
+</body>
+</html>
